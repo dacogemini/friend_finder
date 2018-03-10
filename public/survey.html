@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <!-- Bootstrap -->
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://surveyjs.azureedge.net/1.0.13/survey.jquery.js"></script>
+    <link href="https://surveyjs.azureedge.net/1.0.13/survey.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Abel|Anton" rel="stylesheet">
+</head>
+
+<body>
+    <h1 style="font-family: 'Anton', sans-serif;">SURVEY SAYS...</h1>
+    <hr>
+    <h2 style="font-family: 'Abel', sans-serif;">But first, we'd love to know more about you.</h2>
+    <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">First Name: <Name:></Name:></label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Last Name:</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+          </form>
+          <br>
+          <hr>
+          <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Upload a picture</label>
+              </div>
+        <hr>
+    <div id="surveyElement"></div>
+    <div id="surveyResult"></div>
+    <div class="container">
+            <h1 style="font-family: 'Anton', sans-serif;">QUESTIONS:</h1>
+    <div id="surveyContainer"></div>
+        <script>
+            Survey.Survey.cssType = "bootstrap";
+            var surveyJSON = {
+                pages: [{
+                    name: "page1",
+                    elements: [{
+                        type: "checkbox",
+                        name: "How clean is your bathroom right now?",
+                        choices: ["Filthy", "Meh - could be better", "Spotless"]
+                    }, {
+                        type: "checkbox",
+                        name: "How important is money to you?",
+                        choices: ["Everything - can't live without it",
+                            "Somewhat - there are other things more important", "Not at all"
+                        ]
+                    }, {
+                        type: "checkbox",
+                        name: "How would you best describe your character?",
+                        choices: ["Shy",
+                            "Expressive", "Humerous", "Uncomplicated"
+                        ]
+                    }, {
+                        type: "checkbox",
+                        name: "What are the most important characteristics in a partner?",
+                        choices: ["Good Looks",
+                            "Smart", "Trust Worthy", "Passionate"
+                        ]
+                    },  {
+                        type: "checkbox",
+                        name: "Could you date a smoker?",
+                        choices: ["Yes",
+                            "No", "Depends what they smoke"
+                        ]
+                    }, {
+                        type: "checkbox",
+                        name: "Perfect Vacation",
+                        choices: ["Beach",
+                            "History", "Entertainment", "Outdoors"
+                        ]
+                    }, {
+                        type: "checkbox",
+                        name: "What is your favorite season?",
+                        choices: ["Spring",
+                            "Summer", "Fall", "Winter"
+                        ]
+                    },  {
+                        type: "checkbox",
+                        name: "What is your favorite music?",
+                        choices: ["Heavy Metal",
+                            "Jazz", "Hip-Hop", "Pop", "Country"
+                        ]
+                    }, {
+                        type: "checkbox",
+                        name: "Complete this sentence: “I wish I had someone with whom I could share …",
+                        choices: ["My life",
+                            "An ice-cream cone", "A motorcycle ride", "A walk on the beach", "Nothing, I am selfish"
+                        ]
+                    },
+                        {
+                        type: "checkbox",
+                        name: "What is your idea of a good night out?",
+                        choices: ["Theater or Opera", "Romantic Dinner", "Concert",
+                            "Karaoke at the local pub"
+                        ]
+                    }]
+                }]
+            }
+            
+            function sendDataToServer(friends) {
+                //send Ajax request to your web server.
+                alert("The results are:" + JSON.stringify(friends.data));
+            }
+
+            var survey = new Survey.Model(surveyJSON);
+            $("#surveyContainer").Survey({
+                model: survey,
+                onComplete: sendDataToServer
+            });
+        </script>
+
+
+        <script type="text/javascript" src="./survey.js"></script>
+</body>
+
+</html>
