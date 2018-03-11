@@ -1,34 +1,48 @@
+// Pull in required dependencies
 var path = require('path');
-var friendArray = require("../data/friends");
 
-module.exports = function (app) {
+// Import the list of friend entries
+var friends = require('../data/friends.js');
+
+// Export API routes
+module.exports = function(app) {
+	// Total list of friend entries
+	app.get('/api/friends', function(req, res) {
+		res.json(friendsArray);
+	});
+	// Add new friend entry
+    app.post('/api/friends', function(req,res){
+        //grabs the new friend's scores to compare with friends in friendArray array
+        var newFriendScores = req.body.scores;
+        var scoresArray = [];
+        var friendCount = 0;
+        var bestMatch = 0;
     
-  /*  app.get('/', function(req, res) {
-        res.sendFile(path.join(__dirname, '../public/home.html'));
-    }); */
-    app.get("/api/friends", function(req, res) {
-        res.json(friendArray);
-      });
-      app.post("/api/friends", function(req, res) {
-
-        console.log(req.body);
-  
-  
-        // var scores = [parseInt(req.body.q1), parseInt(req.body.q2), parseInt(req.body.q3), parseInt(req.body.q4), parseInt(req.body.q5)];
-        // console.log(scores)
-  
-        function getSum(total,num) {
-            return total + Math.round(num);
+        //runs through all current friends in list
+        for(var i=0; i<friendArray.length; i++){
+          var scoresDiff = 0;
+          //run through scores to compare friends
+          for(var j=0; j<newFriendScores.length; j++){
+            scoresDiff += (Math.abs(parseInt(friendArray[i].scores[j]) - parseInt(newFriendScores[j])));
+          }
+    
+          //push results into scoresArray
+          scoresArray.push(scoresDiff);
         }
-    // custom 404 page 
-    app.use(function (req, res) {
-        res.status(404);
-        res.send('404 - File Not Found');
-    }); // custom 500 page 
-    app.use(function (err, req, res, next) {
-        console.error(err.stack);
-        res.status(500);
-        res.send('500 - Server Error');
-    });  
-})
-}
+        console.log(scoresArray);
+        //after all friends are compared, find best match
+        for(var i=0; i<scoresArray.length; i++){
+          if(scoresArray[i] <= scoresArray[bestMatch]){
+            bestMatch = i;
+          }
+          
+        }
+    
+        //return bestMatch data
+        var bff = friendArray[bestMatch];
+        res.json(bff);
+        console.log(bff);
+        //pushes new submission into the friendsList array
+        friendArray.push(req.body);
+      });
+    };

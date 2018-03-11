@@ -17,7 +17,7 @@ var friendArray = [
     },
     {
       "name":"Brad",
-      "photo":"app/images/brad.png",
+      "photo":"app/img/cbb.jpg",
       "scores":[
           2,
           2,
@@ -32,8 +32,8 @@ var friendArray = [
         ]
     },
     {
-      "name":"Barack",
-      "photo":"/images/barack.png",
+      "name":"Donald",
+      "photo":"/app/img/Donald.jpg",
       "scores":[
           5,
           3,
@@ -48,8 +48,8 @@ var friendArray = [
         ]
     },
     {
-      "name":"Ewan",
-      "photo":"app/images/ewan.png",
+      "name":"Jennifer",
+      "photo":"app/img/jennifer.jpg",
       "scores":[
           2,
           3,
@@ -64,8 +64,8 @@ var friendArray = [
         ]
     },
     {
-      "name":"Jared",
-      "photo":"app/images/jared.png",
+      "name":"Jim",
+      "photo":"app/img/jim.jpg",
       "scores":[
           5,
           4,
@@ -79,8 +79,8 @@ var friendArray = [
           2
         ]
     }, {
-      "name":"Johnny",
-      "photo":"app/images/johnny.png",
+      "name":"Leo",
+      "photo":"app/img/leo.jpg",
       "scores":[
           1,
           3,
@@ -95,8 +95,8 @@ var friendArray = [
         ]
     },
     {
-      "name":"Jon",
-      "photo":"app/images/jon.png",
+      "name":"Howie",
+      "photo":"app/img/howie.jpg",
       "scores":[
           4,
           4,
@@ -111,8 +111,8 @@ var friendArray = [
         ]
     },
     {
-      "name":"Justin",
-      "photo":"app/images/justin.png",
+      "name":"Emily",
+      "photo":"app/img/emily.jpg",
       "scores":[
           5,
           4,
