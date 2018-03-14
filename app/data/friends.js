@@ -1,7 +1,7 @@
 var friendArray = [
     {
       "name":"Stephanie",
-      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
+      "photo":"https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/26993545_10213513885735246_3456605195804569745_n.jpg?oh=4bbbf6e78ff94189457a7e5989eae171&oe=5B4644DF",
       "scores":[
           5,
           1,
@@ -33,7 +33,7 @@ var friendArray = [
     },
     {
       "name":"Donald",
-      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
+      "photo":"https://img.etimg.com/thumb/msid-58980445,width-643,imgsize-182458,resizemode-4/some-fun-facts-about-disneys-most-popular-character-donald-duck.jpg",
       "scores":[
           5,
           3,
@@ -49,7 +49,7 @@ var friendArray = [
     },
     {
       "name":"Jennifer",
-      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Jennifer_Lawrence_SDCC_2015_X-Men.jpg/1200px-Jennifer_Lawrence_SDCC_2015_X-Men.jpg",
       "scores":[
           2,
           3,
@@ -65,7 +65,7 @@ var friendArray = [
     },
     {
       "name":"Jim",
-      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
+      "photo":"https://i.ytimg.com/vi/YZAWEqU0rlQ/maxresdefault.jpg",
       "scores":[
           5,
           4,
@@ -80,7 +80,7 @@ var friendArray = [
         ]
     }, {
       "name":"Leo",
-      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
+      "photo":"https://images.ganeshaspeaks.com/images_gsv7/leo200.png",
       "scores":[
           1,
           3,
@@ -96,7 +96,7 @@ var friendArray = [
     },
     {
       "name":"Howie",
-      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
+      "photo":"https://foxsports-wordpress-www-prsupports-prod.s3.amazonaws.com/uploads/sites/2/2016/12/PHOTO-Long-HS-727x727-480x480.jpg",
       "scores":[
           4,
           4,
@@ -112,7 +112,7 @@ var friendArray = [
     },
     {
       "name":"Emily",
-      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
+      "photo":"https://timedotcom.files.wordpress.com/2016/08/emily-blunt-peter-hapak-the-girl-on-the-train.jpg",
       "scores":[
           5,
           4,
