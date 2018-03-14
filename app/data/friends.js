@@ -1,7 +1,7 @@
 var friendArray = [
     {
       "name":"Stephanie",
-      "photo":"app/img/smg.jpg",
+      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
       "scores":[
           5,
           1,
@@ -17,7 +17,7 @@ var friendArray = [
     },
     {
       "name":"Brad",
-      "photo":"app/img/cbb.jpg",
+      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
       "scores":[
           2,
           2,
@@ -33,7 +33,7 @@ var friendArray = [
     },
     {
       "name":"Donald",
-      "photo":"/app/img/Donald.jpg",
+      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
       "scores":[
           5,
           3,
@@ -49,7 +49,7 @@ var friendArray = [
     },
     {
       "name":"Jennifer",
-      "photo":"app/img/jennifer.jpg",
+      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
       "scores":[
           2,
           3,
@@ -65,7 +65,7 @@ var friendArray = [
     },
     {
       "name":"Jim",
-      "photo":"app/img/jim.jpg",
+      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
       "scores":[
           5,
           4,
@@ -80,7 +80,7 @@ var friendArray = [
         ]
     }, {
       "name":"Leo",
-      "photo":"app/img/leo.jpg",
+      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
       "scores":[
           1,
           3,
@@ -96,7 +96,7 @@ var friendArray = [
     },
     {
       "name":"Howie",
-      "photo":"app/img/howie.jpg",
+      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
       "scores":[
           4,
           4,
@@ -112,7 +112,7 @@ var friendArray = [
     },
     {
       "name":"Emily",
-      "photo":"app/img/emily.jpg",
+      "photo":"https://s3.gossipcop.com/up/2018/03/Brad-Pitt-Celibate-Year.jpg",
       "scores":[
           5,
           4,

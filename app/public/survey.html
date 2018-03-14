@@ -237,7 +237,7 @@
             <div class="modal-content">
                 <h4>Meet Your New Friend!</h4>
                 <h5 id="matchName"></h5>
-                <img id="matchPic" src="" alt="No Image" width=2 50px>
+                <img id="matchPic"/>
                 <div class="modal-header">
                     <h5 class="modal-title" id="ModalLabel"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -303,7 +303,7 @@
 
                         $(".modal-body").text(data.name);
                         $("#matchPic").attr("src", data.photo);
-                        $(".modal-title").text("randon string");
+                        console.log(data.photo);
                     });
                     // Show the modal with the best match
                     $('.modal').modal();

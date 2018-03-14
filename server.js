@@ -30,6 +30,7 @@ app.use(bodyParser.json());
 
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
+app.use(express.static('app/img'));
 app.listen(PORT, function() {
 // Log (server-side) when our server has started
     console.log("Server listening on: http://localhost:" + PORT);
